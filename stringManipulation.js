@@ -77,24 +77,11 @@ document.write("<h3>File extension extraction</h3>");
 
   function getExt(){
 	let fname = "index.html"
-	let convertStringToArray = fname.split(".");
-	
+	let convertStringToArray = fname.split(".").pop();
+
 	document.write(convertStringToArray);
-	
-	//for(let i=0; i<convertStringIntoArray.length; i++){
-		//convertStringIntoArray[i]=convertStringIntoArray[i].slice(1);
-	//}
-	
-	//document.write(convertStringIntoArray.join("."));
-	//if(fname.includes(".")){
-	
-		
-		//return convertStringIntoArray[0]+ " " + convertStringIntoArray[1];
-		//}
-	//else{
-		//return null;
-	//}
-}
+  }
+
 getExt()
 
 document.write("<hr>");
